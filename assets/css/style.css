@@ -135,12 +135,12 @@ form p a:hover{
     font-weight: bold;
     outline: none;
     border: none;
-    
+    transition: 1.1s;
 }
 
 .boton:hover{
-    width: 55%;
     transition: 1.1s;
+    width: 55%;
     color: var(--Gradient-dark);
     background: rgb(227,129,80);
     background: linear-gradient(90deg, rgba(227,129,80,1) 0%, rgba(252,172,137,1) 50%, rgb(243, 162, 128) 100%);
@@ -184,4 +184,22 @@ form p a:hover{
         width: 50%;
     }
     
+}
+#tituloJuego{
+    font-size: 5rem;
+}
+
+.botones-inicio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.botones-inicio a{
+    width: 30%;
+    padding: 2rem 0.7rem;
+    text-align: center;
+    font-size: 2rem;
 }
