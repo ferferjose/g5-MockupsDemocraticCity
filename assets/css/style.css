@@ -144,8 +144,14 @@ form p a:hover{
 }
 
 .alcaldes{  
+    display: none;
     width: 100%;
     text-align: center;
+}
+@media (max-width: 768px) {
+    .alcaldes{
+        display: block;
+    }
 }
 
 .alcaldes div{  
