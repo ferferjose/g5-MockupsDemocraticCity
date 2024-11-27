@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+::root{
+    --Font-color-oscuro: #276359;
+    --Gradient-dark: #419889;
+    --Gradient-medium: #8EBBA7;
+    --Gradient-light: #A5E2C7; 
+    --Font-color-light: #FCAC89;
+    --Font: 'Poppins', sans-serif;
+}
+
+form{
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    background: rgb(65,152,137);
+    background: linear-gradient(90deg, rgba(65,152,137,1) 0%, rgba(142,187,167,1) 50%, rgba(165,226,199,1) 100%);
+    padding: 0.7rem;
+    border-radius: 0.5rem; 
+    box-shadow:  -3px 3px 7px #000000dc,
+             -8px -8px 20px #ffffff;
+    border: none;
+    color: #276359;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+::placeholder{
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--Font);
+    font-size: 1rem;
+    color: #276359;
+}
+
+.boton:focus{
+    outline: none;
+    font-weight: bold;
+}
+
+.submit{
+    width: 25%;
+    margin-top: 2rem;
+    display: block;
+    background: rgb(65,152,137);
+    background: linear-gradient(90deg, rgba(65,152,137,1) 0%, rgba(142,187,167,1) 50%, rgba(165,226,199,1) 100%);
+    padding: 0.5rem;
+    border-radius: 0.5rem; 
+    box-shadow:  -3px 3px 7px #000000dc,
+             -8px -8px 20px #ffffff;
+    border: none;
+    color: #276359;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
