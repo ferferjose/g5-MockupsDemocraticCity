@@ -32,17 +32,11 @@ main{
     margin: 0px;
     width: 100%;
     display: grid;
-    grid-template-rows: 10vh 85vh;
+    grid-template-rows: 10vh;
     /* align-items: center;
     justify-content: center; */
 }
-.icons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 1rem;
-}
+
 button{
     background-color: transparent;
     border: none;
@@ -137,18 +131,10 @@ form p a:hover{
     background: rgb(227,129,80);
     background: linear-gradient(90deg, rgba(227,129,80,1) 0%, rgba(252,172,137,1) 50%, rgb(243, 162, 128) 100%);
 }
-
-/* Específico */
-#mostrarpassw{
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--Font-color-light);
-    width: 60%;
-    text-shadow: 1px ;
-    text-shadow: -3px 1px 3px black;
+a{
+    text-decoration: none;
 }
+/* Imagenes de abajo en inicio de sesión,  inicio, y registro*/
 .alcaldes{
     width: 30%;
     margin: 0 auto;
@@ -162,4 +148,42 @@ form p a:hover{
         width: 100%;
         margin: 0 auto;
     }
+}
+
+/* ----- Páginas especificas ----- */
+/* Inicio de sesión */
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+/* Página de inicio */
+.inicio{
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.botones-inicio{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.botones-inicio a{
+    text-align: center;
+}
+#mostrarpassw{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Font-color-light);
+    width: 60%;
+    text-shadow: 1px ;
+    text-shadow: -3px 1px 3px black;
 }
