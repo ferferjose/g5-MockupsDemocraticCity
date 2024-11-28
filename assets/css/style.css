@@ -33,6 +33,7 @@ main{
 .login-container{
     height: 100vh;
     backdrop-filter: blur(5px);
+    padding: 1rem;
 }
 /* Parte de arriba donde está el sonido */
 .icons{
@@ -45,8 +46,6 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    -color: #00000040;
-
 }
 /* Generales */
 button{
@@ -57,12 +56,26 @@ button{
 
 h1{
     color: white;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 5rem;    font-weight: 700;
     text-shadow: -3px 1px 3px black;
     text-decoration: underline;
     text-align: center;
     margin: 5rem 0 2 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%; /* Cambia el ancho a porcentajes */
+}
+
+form {
+    width: 80%; /* Ancho adaptable */
 }
 @media (max-width: 768px) {
     h1{
@@ -71,7 +84,7 @@ h1{
 }
 
 form{
-    width: 50%;
+    width: 80%; /* Cambia el ancho a porcentajes */
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -82,10 +95,10 @@ form{
 
 input[type="text"],
 input[type="password"]{
-    width: 100%;
+    width: 70%;
     /* background: rgb(65,152,137); */
     background: linear-gradient(90deg, rgba(65,152,137,1) 0%, rgba(142,187,167,1) 50%, rgba(165,226,199,1) 100%);
-    padding: 1rem 0.7rem;
+    padding: 1.2rem 0.7rem;
     border-radius: 0.5rem; 
     box-shadow:  -3px 3px 7px #000000dc;
     border: none;
@@ -150,7 +163,7 @@ form p a:hover{
 /* Específico */
 #mostrarpassw{
     color: var(--Font-color-light);
-    width: 90%;
+    width: 70%;
     display: flex;
     align-items: center;
     text-align: left;
@@ -198,8 +211,83 @@ form p a:hover{
     margin-top: 3rem;
 }
 .botones-inicio a{
-    width: 30%;
+    width: 50%;
     padding: 2rem 0.7rem;
     text-align: center;
     font-size: 2rem;
+}
+
+/* Panel Admin */
+.tituloPanelAdmin{
+    margin-top: 2rem;
+}
+.panelAdmin{
+    color: #12554A;
+    font-weight: 700;
+}
+.panelAdmin .paneles1{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.paneles1 .panel1:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+/* Estilos para el panel */
+.panel1 {
+    
+    background: linear-gradient(90deg, #8EBBA7, #A5E2C7); /* Degradado de fondo */
+    padding: 1rem 2rem;
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Sombra */
+    max-width: 400px; /* Ancho máximo del panel */
+    margin: 1rem auto; /* Centrado */
+}
+
+/* Imagen dentro del panel */
+.panelAdmin a{
+    text-decoration: none;
+    color: #12554A;
+}
+.panle1 div{
+    width: 30%;
+}
+.panel1 img {
+    width: 50%;
+}
+.panel1 p{
+    width: 100%;
+}
+.panel1{
+    background: linear-gradient(90deg, rgba(65,152,137,1) 0%, rgba(142,187,167,1) 50%, rgba(165,226,199,1) 100%);
+    width: 40%;
+    height: 125px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: -1px 2px 6px black;
+}
+.panel2{
+    background: linear-gradient(90deg, rgba(65,152,137,1) 0%, rgba(142,187,167,1) 50%, rgba(165,226,199,1) 100%);
+    width: 40%;
+    margin: 0 auto;
+    height: 125px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: -1px 2px 6px black;
 }
