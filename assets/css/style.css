@@ -53,8 +53,7 @@ h1{
 }
 @media (max-width: 768px) {
     h1{
-        font-size: 4rem;
-
+        font-size: 4rem
     }
 }
 form{
