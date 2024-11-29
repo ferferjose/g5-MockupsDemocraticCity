@@ -51,6 +51,12 @@ h1{
     margin-bottom: 3rem;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    h1{
+        font-size: 4rem;
+
+    }
+}
 form{
     margin: 0 auto;
     width: 50%;
