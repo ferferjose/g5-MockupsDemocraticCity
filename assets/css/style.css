@@ -470,7 +470,6 @@ a{
         min-height: 100vh;
         backdrop-filter: blur(0px);
         background-color: #fad8ac;
-        background-color: #87ceeb;
         overflow: hidden;
 
         /* display: flow-root; */
