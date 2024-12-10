@@ -442,3 +442,190 @@ table tr:nth-child(1) > td:nth-child(2){
 .blanco{
     color: white;
 }
+
+
+/* Juego */
+#bodyJuego{
+        background-image: url();
+        background-position: none;
+        background-size: none;
+        background-repeat: none;
+        min-height: 100vh;
+        backdrop-filter: blur(0px);
+        background-color: #fad8ac;
+        /* display: flow-root; */
+}
+#juego{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh 25vh 69vh;
+    margin: 0 auto;
+
+}
+
+
+#mapa{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(../img/mapaJuego.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* aspect-ratio: 1; */
+}
+.preguntas{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.preguntas>div:nth-child(1){
+    width: 75%;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.respuestas {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual ancho */
+    gap: 10px; /* Espaciado entre las respuestas */
+}
+
+.respuestas button {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* #e1{
+    background-color: transparent;
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    left: 25%;
+} */
+
+.edificios{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    top: 18%;
+    left: 13%;
+    transform: rotate(25deg);
+}
+@media (max-width: 1280px) {
+    .edificios{
+        top: 21%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 1080px) {
+    .edificios{
+        height: 90px;
+        top: 24%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 980px) {
+    .edificios{
+        width: 70px;
+        height: 80px;
+        top: 27%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 860px) {
+    .edificios{
+        width: 70px;
+        height: 80px;
+        top: 28%;
+        left: 11%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 800px) {
+    .edificios{
+        width: 60px;
+        height: 70px;
+        top: 30%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 700px) {
+    .edificios{
+        width: 50px;
+        height: 60px;
+        top: 33%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 620px) {
+    .edificios{
+        width: 40px;
+        height: 50px;
+        top: 35%;
+        left: 13%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 550px) {
+    .edificios{
+        width: 30px;
+        height: 40px;
+        top: 38%;
+        left: 12%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 460px) {
+    .edificios{
+        width: 15px;
+        height: 30px;
+        top: 40%;
+        left: 10%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 460px) {
+    .edificios{
+        width: 15px;
+        height: 30px;
+        top: 40%;
+        left: 10%;
+        transform: rotate(25deg);
+    }
+}
+@media (max-width: 430px) {
+    .edificios{
+        width: 10px;
+        height: 30px;
+        top: 40%;
+        left: 10%;
+        transform: rotate(25deg);
+    }
+}
+
