@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modificación de preguntas</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+        <link rel="stylesheet" href="../assets/css/styleAdmin.css">
     </head>
     <body id>
         <header>
@@ -18,9 +18,8 @@
         <main>
             <h1>Modificación de preguntas y respuestas</h1>
             <section class="botones">
-                <button>Filtrar</button>
-                <button>Buscar</button>
-                <button>Ordenar</button>
+                <a href="index.php?c=Usuarios&m=mostrarPanelSuper">Panel Admin</a>
+                <a href="index.php?c=Preguntas&m=mostrarAniadirPreguntas">Añadir preguntas</a>
             </section>
             <section>
                 <details>
@@ -102,9 +101,22 @@
                                     <td class="center">0</td>
                             </table>
                         </div>
+                        <button type="button" class="boton eliminar">Eliminar</button>
+                        <input type="submit" class="boton" value="Modificar">
                     </div>
                 </details>
+                
             </section>
         </main>
+        <div id="modalEliminar" class="modal">
+            <div class="modal-content">
+                <h2>¿Estás seguro de que quieres eliminar esta pregunta?</h2>
+                <div class="modal-buttons">
+                    <button id="confirmarEliminar" class="boton">Sí, eliminar</button>
+                    <button id="cancelarEliminar" class="boton boton-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/eliminar.js"></script>
     </body>
 </html>

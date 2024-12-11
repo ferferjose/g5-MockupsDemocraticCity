@@ -460,20 +460,20 @@ a{
     transition: 0.3s;
 }
 
-
 /* Juego */
 #bodyJuego{
-        background-image: url();
-        background-position: none;
-        background-size: none;
-        background-repeat: none;
-        min-height: 100vh;
-        backdrop-filter: blur(0px);
-        background-color: #fad8ac;
-        overflow: hidden;
+    background-image: url();
+    background-position: none;
+    background-size: none;
+    background-repeat: none;
+    min-height: 100vh;
+    backdrop-filter: blur(0px);
+    background-color: #fad8ac;
+    overflow: hidden;
 
-        /* display: flow-root; */
+    /* display: flow-root; */
 }
+
 #juego{
     width: 100%;
     display: grid;
@@ -484,7 +484,7 @@ a{
 }
 
 .preguntas{
-    width: 100%;
+width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -541,8 +541,8 @@ a{
     top: 0;
     left: 0;
     z-index: 2;
-}
-#edificio2{
+    }
+    #edificio2{
     width: 100%;
     height: 100%;
     background-image: url(../img/colegio.png);
@@ -554,5 +554,3 @@ a{
     left: 0;
     /* display: none; */
 }
-
-
