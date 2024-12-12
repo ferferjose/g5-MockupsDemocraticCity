@@ -445,6 +445,10 @@ th, td {
     text-align: center;
 }
 
+.summaryContainer img{/*Joaquín*/
+    width: 100%;
+}
+
 .center{
     text-align: center;
 }
