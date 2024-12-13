@@ -557,7 +557,7 @@ width: 100%;
 
 /*Manual de juego        Joaquín*/
 
-details{
+details{ /*desde aqui*/
     margin-bottom: 2rem;
 }
 summary {
@@ -599,7 +599,7 @@ details:nth-of-type(odd) > summary {
 .summaryContainer hr{
     background-color: white;
     height: 0.3rem;
-}
+}/*hasta aqui es copiado del styleAdmin.css sin mofificarlo*/
 
 .summaryContainer > div{
     margin: 2rem 0;
