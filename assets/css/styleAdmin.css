@@ -767,11 +767,11 @@ td{
 
 /*Modificacion logros Joaquin*/
 
-.logros{
+.formMultimedia{
     background: none;
     width: calc(100% - 1.5rem); /*esto le resta al 100% 1.5rem*/
 }
-.logros input[name="logro"]{
+.formMultimedia input[name="logro"]{
     width: calc(100% - 1rem);
     height: 100%;
     background: none;
@@ -819,4 +819,26 @@ input::file-selector-button{
 
 input[type="file"]{
     width: 90%;
+}
+
+.multimedia{
+    display: flex;
+    justify-content: center;
+}
+
+.detailsMultimedia{
+    width: 40%;
+}
+
+.summaryMultimedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.summaryMultimedia > img{
+    width: 10%;
 }
