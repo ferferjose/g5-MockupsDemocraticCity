@@ -605,10 +605,6 @@ details:nth-of-type(odd) > summary {
     margin: 2rem 0;
     display: flex;
 }
-.summaryContainer > div > div:nth-child(2){
-    flex-grow: 2;
-    flex-shrink: 2;
-}
 
 .texto{
     display: flex;
@@ -616,13 +612,12 @@ details:nth-of-type(odd) > summary {
     justify-content: center;
 }
 
-.summaryContainer > div > div:first-child{
+.summaryContainer > div > div:nth-child(odd){
     width: 50%;
     margin: 0 1rem;
 }
 
 .summaryContainer img{
-    display: block;
     width: 100%;
     border-radius: 5%;
     margin: 0 auto;
